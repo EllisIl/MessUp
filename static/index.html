@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div id="nameContainer">
+        <h1>Enter Your Name</h1>
+        <input type="text" id="nameInput" placeholder="Type your name" required>
+        <button id="joinButton">Join</button>
+    </div>
+
+    <div id="messagingContainer" style="display:none;">
+        <h1>Messaging App</h1>
+        <div id="messagesContainer">
+            <ul id="messagesList"></ul>
+        </div>
+        <div id="inputContainer">
+            <input type="text" id="messageInput" placeholder="Type your message" required disabled>
+            <button type="submit" disabled>Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JS -->
+</body>
+</html>
