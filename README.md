@@ -2,7 +2,7 @@
 
 This messaging service uses WebSockets with Rust on the backend, combined with HTML, JavaScript, and CSS on the frontend, to create a real-time chat platform. Users can set a username and message each other in a simple, intuitive messaging interface.
 
-[Software Demo Video]()
+[Software Demo Video](https://www.youtube.com/watch?v=BsLbHI85kug)
 
 # Development Environment
 
