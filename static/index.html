@@ -1,29 +1,30 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messaging App</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <title>MessUp Chat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="nameContainer">
-        <h1>Enter Your Name</h1>
-        <input type="text" id="nameInput" placeholder="Type your name" required>
-        <button id="joinButton">Join</button>
+    <!-- splash screen for username input -->
+    <div id="splash-screen">
+        <h1>Welcome to MessUp</h1>
+        <p>Please enter your username to continue:</p>
+        <input type="text" id="splash-username" placeholder="Username">
+        <button id="start-chat">Enter the Mess</button>
     </div>
 
-    <div id="messagingContainer" style="display:none;">
-        <h1>Messaging App</h1>
-        <div id="messagesContainer">
-            <ul id="messagesList"></ul>
+    <!-- chat container (hidden initially) -->
+    <div id="chat-container" class="hidden">
+        <div id="messages-container">
+            <ul id="messages"></ul>
         </div>
-        <div id="inputContainer">
-            <input type="text" id="messageInput" placeholder="Type your message" required disabled>
-            <button type="submit" disabled>Send</button>
+        <div id="message-input">
+            <input type="text" id="message" placeholder="Enter message">
+            <button id="send-button" onclick="sendMessage()">Send</button>
         </div>
     </div>
-
-    <script src="script.js"></script> <!-- Link to external JS -->
+    <script src="script.js"></script>
 </body>
 </html>
